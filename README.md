@@ -18,7 +18,7 @@ It means a class or method should have clear defined responsibilities, what it d
 and what it not.<br/><br/>
 For example- A Employee model class should have only responsibility of holding data
 related to employee info like name, age, designation.
-If Employee class contains the fuctions like processSalary, provideReview, applyForLeave etc.
+If Employee class contains the fuctions like **processSalary**, provideReview, applyForLeave etc.
 Then we have given more than one responsibility on the employee class.
 
 ## Open Close Principle
@@ -46,6 +46,5 @@ According to Robert Martin, Dependency Inversion principle is defined as-:
 In simple terms all the high level modules that is your business logic should depend on low level
 modules and there should be proper abstraction for accessing low level modules from high level modules
 so that they can be replaced easily without affecting the high level modules.
-<br/><br/>
-**Always program to interfaces**
 </p>
+*Always program to interfaces*
