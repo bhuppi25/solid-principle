@@ -1,4 +1,10 @@
 # Solid Principles
+These are the fundamental principles for writing a software that is-:
+1. Extensible
+2. Maintainable
+3. Readable
+4. Testable
+
 It stands for following terms-:
 1. Single Responsibility Principle
 2. Open Close Principle
@@ -26,3 +32,20 @@ any of the desirable properties of the program.<br/><br/>
 In simple terms this principle states that the object of child class can be captured inside 
 the parent class without any issues and it should be like we are using the parent class object.
 We should avoid wrong abstraction where child class is not the proper child class of parent.
+
+## Interface Segregation Principle
+This principle states that you should not a god/bulk interface that define all the functionality,
+but we should split our interfaces into interfaces which has specific functionality so that for client it makes 
+easier to choose and implement.(Client is not forced to implement a method which it doesn't require)
+
+## Dependency Inversion Principle
+According to Robert Martin, Dependency Inversion principle is defined as-:
+1. High level module shouldn't depend on low level modules. Both should depend on abstraction.
+2. Abstraction should not depend on details, details should not depend on abstraction.
+<p>
+In simple terms all the high level modules that is your business logic should depend on low level
+modules and there should be proper abstraction for accessing low level modules from high level modules
+so that they can be replaced easily without affecting the high level modules.
+<br/><br/>
+**Always program to interfaces**
+</p>
