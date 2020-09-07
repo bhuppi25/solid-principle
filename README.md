@@ -6,20 +6,26 @@ These are the fundamental principles for writing a software that is-:
 4. Testable
 
 It stands for following terms-:
-1. Single Responsibility Principle
-2. Open Close Principle
-3. Liskov Substitution Principle
-4. Interface Segregation principle
-5. Dependency Inversion Principle
+1. **Single Responsibility Principle**
+2. **Open Close Principle**
+3. **Liskov Substitution Principle**
+4. **Interface Segregation principle**
+5. **Dependency Inversion Principle**
 
 ## Single Responsibility Principle
-This principle states that a class should not have more than one reason to change.
+**This principle states that a class should not have more than one reason to change.**
 It means a class or method should have clear defined responsibilities, what it does 
 and what it not.<br/><br/>
 For example- A Employee model class should have only responsibility of holding data
 related to employee info like name, age, designation.
-If Employee class contains the fuctions like **processSalary**, provideReview, applyForLeave etc.
-Then we have given more than one responsibility on the employee class.
+If Employee class contains functions like **processSalary**, **provideReview**, **applyForLeave** etc.
+Then we have given more than one responsibility on the Employee class.
+<br/><br/>
+Here better approach would be to have seperate class for different function like an 
+interface.
+1. **EmployeeSalary** (For proceessing the salary)
+2. **EmployeeReview** (For proceessing the review)
+3. **EmployeeLeave** (For proceessing the leaves)
 
 ## Open Close Principle
 It states that any software component should be open for extension and close for modification i.e.
@@ -42,9 +48,10 @@ easier to choose and implement.(Client is not forced to implement a method which
 According to Robert Martin, Dependency Inversion principle is defined as-:
 1. High level module shouldn't depend on low level modules. Both should depend on abstraction.
 2. Abstraction should not depend on details, details should not depend on abstraction.
-<p>
+<br/><br/>
 In simple terms all the high level modules that is your business logic should depend on low level
 modules and there should be proper abstraction for accessing low level modules from high level modules
 so that they can be replaced easily without affecting the high level modules.
-</p>
-*Always program to interfaces*
+</br/><br/>
+**Always program to interfaces**
+
